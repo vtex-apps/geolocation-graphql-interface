@@ -1,0 +1,19 @@
+{
+  "vendor": "vtex",
+  "name": "geolocation-graphql-interface",
+  "version": "0.0.1",
+  "title": "GraphQL interface for geolocation APIs",
+  "description": "GraphQL schemas that can be used to implement your own geolocation resolver",
+  "credentialType": "absolute",
+  "builders": {
+    "graphql": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {},
+  "policies": [
+    {
+      "name": "graphql-query"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
