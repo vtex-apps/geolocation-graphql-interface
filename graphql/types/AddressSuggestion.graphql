@@ -1,0 +1,12 @@
+type AddressSuggestion {
+  description: String!
+  mainText: String!
+  mainTextMatchInterval: MatchInterval!
+  secondaryText: String!
+  externalId: String
+}
+
+type MatchInterval {
+  offset: Int!
+  length: Int!
+}

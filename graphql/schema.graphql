@@ -1,0 +1,5 @@
+type Query {
+  suggestAddresses(searchTerm: String): [AddressSuggestion]
+
+  getAddressByExternalId(id: String): Address
+}
