@@ -1,0 +1,24 @@
+type Address {
+  addressId: ID
+  addressType: AddressType
+  city: String
+  complement: String
+  country: String
+  geoCoordinates: [Float!]
+  neighborhood: String
+  number: String
+  postalCode: String
+  receiverName: String
+  reference: String
+  state: String
+  street: String
+}
+
+enum AddressType {
+  residential
+  commercial
+  inStore
+  giftRegistry
+  pickup
+  search
+}
