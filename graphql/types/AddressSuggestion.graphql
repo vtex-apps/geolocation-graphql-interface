@@ -3,7 +3,7 @@ type AddressSuggestion {
   mainText: String!
   mainTextMatchInterval: MatchInterval!
   secondaryText: String!
-  externalId: String
+  externalId: String!
 }
 
 type MatchInterval {
