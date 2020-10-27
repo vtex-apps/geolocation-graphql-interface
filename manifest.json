@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "geolocation-graphql-interface",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "title": "GraphQL interface for geolocation APIs",
   "description": "GraphQL schemas that can be used to implement your own geolocation resolver",
   "credentialType": "absolute",
