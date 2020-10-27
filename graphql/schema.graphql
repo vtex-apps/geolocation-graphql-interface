@@ -1,5 +1,5 @@
 type Query {
-  suggestAddresses(searchTerm: String): [AddressSuggestion]
+  suggestAddresses(searchTerm: String!): [AddressSuggestion!]!
 
-  getAddressByExternalId(id: String): Address
+  getAddressByExternalId(id: String!): Address!
 }
