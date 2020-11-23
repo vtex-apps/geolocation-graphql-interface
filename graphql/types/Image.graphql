@@ -1,0 +1,10 @@
+type File {
+  filename: String!
+  mimetype: String!
+  encoding: String!
+}
+
+type Image {
+  src: String!
+  alt: String!
+}
