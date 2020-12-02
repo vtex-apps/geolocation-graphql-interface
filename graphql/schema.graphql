@@ -3,5 +3,5 @@ type Query {
 
   getAddressByExternalId(id: String!): Address!
 
-  getLogo: Image!
+  providerLogo: Image!
 }
