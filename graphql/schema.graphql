@@ -7,4 +7,6 @@ type Query {
   getAddressByExternalId(id: String!, sessionToken: String): Address!
 
   providerLogo: Image!
+
+  sessionToken: String!
 }
