@@ -9,7 +9,6 @@
 #### Checklist/Reminders
 
 - [ ] Linked this PR to a JIRA story (if applicable).
-- [ ] Updated/created tests.
 - [ ] Deleted the workspace after merging this PR (if applicable).
 
 #### Screenshots or example usage
