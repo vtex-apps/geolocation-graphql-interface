@@ -1,10 +1,10 @@
 type Query {
-  suggestAddresses(
+  addressSuggestions(
     searchTerm: String!
     sessionToken: String
   ): [AddressSuggestion!]!
 
-  getAddressByExternalId(id: String!, sessionToken: String): Address!
+  address(externalId: String!, sessionToken: String): Address!
 
   providerLogo: Image!
 

@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Query for session token retrieval.
 - Session token argument for search queries.
+### Changed
+- GetAddressByExternalId query is now Address.
+- SuggestAddresses query is now AddressSuggestions.
 
 ## [0.1.0] - 2020-12-04
 ### Added

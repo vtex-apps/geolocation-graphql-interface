@@ -8,11 +8,11 @@ This app exports a GraphQL schema for geolocation results for Place Components.
 
 To use it in your app, run the `vtex add vtex.geolocation-graphql-interface` command.
 
-You may then use it in your front end component queries, for example, by writing the file `suggestAddresses.graphql`:
+You may then use it in your front end component queries, for example, by writing the file `addressSuggestions.graphql`:
 
 ```graphql
-query SuggestAddresses($searchTerm: String!) {
-  suggestAddresses(searchTerm: $searchTerm)
+query AddressSuggestions($searchTerm: String!) {
+  addressSuggestions(searchTerm: $searchTerm)
     @context(provider: "vtex.geolocation-graphql-interface") {
     description
     mainText
@@ -36,11 +36,11 @@ Having zero or more than one resolver installed will result in an error.
 
 ### Examples
 
-Currently, this interface only supports autosuggest related operations, which is commonly used along with a text-based input like the [Location Search component](https://github.com/vtex-apps/place-components/#locationfield-search) used in `vtex.place-components`. In order to get the suggestions, each key-stroke might send a `suggestAddresses` query like:
+Currently, this interface only supports autosuggest related operations, which is commonly used along with a text-based input like the [Location Search component](https://github.com/vtex-apps/place-components/#locationfield-search) used in `vtex.place-components`. In order to get the suggestions, each key-stroke might send a `addressSuggestions` query like:
 
 ```graphql
 query {
-  suggestAddresses(searchTerm: "Praia de bot") {
+  addressSuggestions(searchTerm: "Praia de bot") {
     description
     externalId
   }
@@ -52,7 +52,7 @@ This returns address suggestions using the resolver of your choice. Notice that 
 ```graphql
 {
   "data": {
-    "suggestAddresses": [
+    "addressSuggestions": [
       {
         "description": "Praia de Botafogo - Botafogo, Rio de Janeiro - RJ, Brasil",
         "externalId": "SAMPLE_ID_2718"
@@ -78,11 +78,11 @@ This returns address suggestions using the resolver of your choice. Notice that 
 }
 ```
 
-If the user selects the first suggested address, we must use it's `externalId` to make a `getAddressByExternalId` query:
+If the user selects the first suggested address, we must use it's `externalId` to make an `address` query:
 
 ```graphql
 query {
-  getAddressByExternalId(id: "SAMPLE_ID_2718") {
+  address(id: "SAMPLE_ID_2718") {
     city
     neighborhood
     street
@@ -95,7 +95,7 @@ Which returns an address object that can be used to autocomplete an address form
 ```graphql
 {
   "data": {
-    "getAddressByExternalId": {
+    "address": {
       "city": "Rio de Janeiro",
       "neighborhood": "Botafogo",
       "street": "Praia de Botafogo"
