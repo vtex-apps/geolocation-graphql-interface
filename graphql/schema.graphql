@@ -1,7 +1,12 @@
 type Query {
-  suggestAddresses(searchTerm: String!): [AddressSuggestion!]!
+  addressSuggestions(
+    searchTerm: String!
+    sessionToken: String
+  ): [AddressSuggestion!]!
 
-  getAddressByExternalId(id: String!): Address!
+  address(externalId: String!, sessionToken: String): Address!
 
   providerLogo: Image!
+
+  sessionToken: String!
 }
