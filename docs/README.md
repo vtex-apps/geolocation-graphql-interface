@@ -26,7 +26,7 @@ query AddressSuggestions($searchTerm: String!) {
 }
 ```
 
-> ℹ️️ The only difference from a standard query is the usage of a _directive_: `@context(provider: "vtex.geolocation-graphql-interface")`
+> 9 The only difference from a standard query is the usage of a _directive_: `@context(provider: "vtex.geolocation-graphql-interface")`
 
 To resolve this query, you must have installed in your workspace an app that implements the GraphQL interface. Currently, those are the available resolvers:
 
@@ -103,3 +103,8 @@ Which returns an address object that can be used to autocomplete an address form
   }
 }
 ```
+
+
+**Upcoming documentation:**
+
+ - [CHK-435: Session token](https://github.com/vtex-apps/geolocation-graphql-interface/pull/6)
