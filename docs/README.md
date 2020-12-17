@@ -1,4 +1,6 @@
-# Geolocation GraphQL interface
+📢 Use this project, [contribute](https://github.com/vtex-apps/geolocation-graphql-interface) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
+
+# Geolocation GraphQL Interface
 
 >⚠️ **USE AT YOUR OWN RISK**
 > 
