@@ -2,9 +2,7 @@
 
 # Geolocation GraphQL Interface
 
->⚠️ **USE AT YOUR OWN RISK**
-> 
-> *This is an ongoing, unsupported, unfinished and undocumented project. We do not guarantee any results after installation.*
+> :warning: *Although ready to be installed, the Geolocation GraphQL Interface app is currently an **open-beta project**. Bear in mind that due to that status, you can expect an accelerated state of evolution.*
 
 The Geolocation GraphQL interface provides autosuggestions for address inputs and autocompletion for address forms.
 
