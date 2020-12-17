@@ -4,7 +4,7 @@
 
 > :warning: *Although ready to be installed, the Geolocation GraphQL Interface app is currently an **open-beta project**. Bear in mind that due to that status, you can expect an accelerated state of evolution.*
 
-The Geolocation GraphQL interface provides autosuggestions for address inputs and autocompletion for address forms.
+The Geolocation GraphQL Interface app provides autosuggestions for address inputs and autocompletion for address forms.
 
 >ℹ️ The Geolocation GraphQL interface allows you to choose which geolocation provider (e.g., [Google Maps](https://www.google.com.br/maps/), [Algolia Places](https://community.algolia.com/places/), [VTEX Places](https://github.com/vtex-apps/places-graphql), etc.) suits better for your store.
 
