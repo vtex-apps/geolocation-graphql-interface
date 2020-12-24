@@ -2,6 +2,10 @@ type Query {
   addressSuggestions(
     searchTerm: String!
     sessionToken: String
+    """
+    A two character, case insensitive, ISO 3166-1 Alpha-2 or Alpha-3 compatible country code, used to restrict the suggestion results
+    """
+    country: String
   ): [AddressSuggestion!]!
 
   address(externalId: String!, sessionToken: String): Address!
