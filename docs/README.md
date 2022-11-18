@@ -1,5 +1,7 @@
 # Geolocation GraphQL Interface
 
+⚠️ **This is an ongoing, unsupported, unfinished and undocumented project. We do not guarantee any results after installation.** ⚠️
+
 This app exports a GraphQL schema for geolocation results for Place Components.
 
 ## Usage
